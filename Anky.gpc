@@ -1,0 +1,65 @@
+
+
+//global variables
+int on=FALSE;
+
+init {
+    // Disable Rumble
+    block_rumble();
+}
+
+main {
+    if(event_press(XB1_LT)){
+        on=!on;
+        }
+    if (on){
+        combo_run(freeze);
+        
+        }
+}
+//farming and combo code
+
+combo freeze {
+    
+//setup
+set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+	set_val(XB1_RT, 100);
+	wait(10);
+	set_val(XB1_RT, 0);
+	wait(10);
+}
